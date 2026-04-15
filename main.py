@@ -1,9 +1,13 @@
 import sys
 import requests
 import csv
+from dotenv import load_dotenv
+import os
 
-""" file_path = "letterboxd-data-test/watched.csv"
-api_key = "42af91267b3fbbe8742a22c7ff38af3c"
+"""
+load_dotenv()
+api_key = os.getenv("API_KEY")
+file_path = "letterboxd-data-test/watched.csv"
 url = "https://api.themoviedb.org/3/search/movie"
 
 try:
@@ -26,7 +30,8 @@ try:
             print(f"{movie['title']} | {year} | {movie['id']}")
 
 except FileNotFoundError:
-  print("Cannot find the file") """
+  print("Cannot find the file")
+"""
 
 file_path = "letterboxd-data-test/watchlist.csv"
 
