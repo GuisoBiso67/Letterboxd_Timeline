@@ -5,9 +5,9 @@ from Timeline import Timeline
 from PyQt5.QtWidgets import QApplication
 from interface import TimelineWindow
 
-file_path = "letterboxd-data-test/watched.csv"
-
 def main():
+  file_path = "letterboxd-data-test/watched.csv"
+
   timeline = Timeline()
   timeline.get_data_from_csv(file_path)
 
